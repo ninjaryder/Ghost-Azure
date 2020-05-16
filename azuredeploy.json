@@ -33,7 +33,7 @@
     },
     "Deploy App Insights": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": false
     },
     "Email Service": {
       "type": "string",
@@ -118,7 +118,7 @@
             "mail__from": "[parameters('Email From Address')]",
             "WEBSITE_NODE_DEFAULT_VERSION": "~12",
             "SCM_COMMAND_IDLE_TIMEOUT": "300",
-            "APPINSIGHTS_INSTRUMENTATION_KEY": "[reference(concat('Microsoft.Insights/components/', variables('appInsightsName'))).InstrumentationKey]"
+            "APPINSIGHTS_INSTRUMENTATION_KEY": "NA"
           }
         },
         {
